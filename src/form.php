@@ -11,7 +11,7 @@
         <button type="submit">Envoyer</button>
     
     </form>
-    <div>
+    <div class="">
 
         <?php
         
@@ -29,7 +29,9 @@
                     move_uploaded_file($_FILES["image"]["tmp_name"], "./uploads/".$name);
 
                     echo "<a href='/img_host/uploads/$name'>Consulter votre image</a>";
-                    echo $name;
+                    echo "<div class='image_host'>
+                            <img src='/img_host/uploads/$name'></img>
+                        </div>";
                 }
             }
 

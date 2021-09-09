@@ -45,6 +45,20 @@ button {
     margin-top: 10px;
 }
 
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.image_host {
+    width: 250px;
+    height: 250px;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     position: fixed;
     bottom: 0;
